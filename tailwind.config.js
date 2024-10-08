@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
+    screens: {
+      md: '960px',
+    },
     extend: {
       colors: {
         'rayna-secondary': '#CC400C',

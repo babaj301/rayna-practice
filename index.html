@@ -18,7 +18,7 @@
     />
   </head>
   <body
-    class="bg-rayna-background flex flex-col justify-between gap-32 items-center"
+    class="bg-rayna-background flex flex-col justify-evenly items-center gap-32"
   >
     <nav
       class="border-b w-full border-rayna-secondary py-5 flex justify-center items-center"
@@ -26,101 +26,88 @@
       <img src="assets/rayna.svg" alt="" />
     </nav>
 
-    <div
-      class="w-full h-full flex justify-center items-center bg-rayna-background"
+    <section
+      class="xl:w-[456px] xl:h-[548px] py-8 px-7 border grow border-rayna-border rounded-xl"
     >
-      <section
-        class="xl:w-[456px] xl:h-[548px] py-8 px-7 border border-rayna-border rounded-xl"
-      >
-        <form action="">
-          <div
-            class="flex flex-col items-center gap-2 mb-8 justify-items-center"
-          >
-            <p class="font-semibold text-2xl">Log In</p>
-            <p class="font-normal text-base text-rayna-grey">
-              Enter your credentials to access your account
+      <form action="">
+        <div class="flex flex-col items-center gap-2 mb-8 justify-items-center">
+          <p class="font-semibold text-2xl">Log In</p>
+          <p class="font-normal text-base text-rayna-grey">
+            Enter your credentials to access your account
+          </p>
+        </div>
+
+        <div class="">
+          <div class="flex flex-col gap-2 mb-8">
+            <label for="email" class="text-base font-medium text-rayna-text"
+              >EMAIL ADDRESS</label
+            >
+            <div
+              class="relative w-full flex justify-center items-center border hover:border-rayna-secondary rounded-md p-4"
+            >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter Email"
+                class="w-full h-full outline-none bg-transparent"
+              />
+              <img src="./assets/email.svg" alt="" class="absolute right-4" />
+            </div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="email" class="text-base font-medium text-rayna-text"
+              >PASSWORD</label
+            >
+            <div
+              class="relative w-full flex justify-center items-center border hover:border-rayna-secondary rounded-md p-4"
+            >
+              <input
+                type="email"
+                name="password"
+                id="password"
+                placeholder="Enter Password"
+                class="w-full h-full outline-none bg-transparent"
+              />
+              <img src="./assets/eye.svg" alt="" class="absolute right-4" />
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-between my-8">
+          <div class="w-[400px] flex gap-2">
+            <input type="checkbox" name="" id="" />
+            <p class="font-medium text-sm text-rayna-text">
+              Remember me for 30 days
             </p>
           </div>
 
-          <div class="">
-            <div class="flex flex-col gap-2 mb-8">
-              <label for="email" class="text-base font-medium text-rayna-text"
-                >EMAIL ADDRESS</label
-              >
-              <div
-                class="relative w-full flex justify-center items-center border hover:border-rayna-secondary rounded-md p-4"
-              >
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter Email"
-                  class="w-full h-full outline-none bg-transparent"
-                />
-                <img
-                  src="./assets/email.svg"
-                  alt=""
-                  class="absolute right-0 pr-1"
-                />
-              </div>
-            </div>
-            <div class="flex flex-col gap-2">
-              <label for="email" class="text-base font-medium text-rayna-text"
-                >PASSWORD</label
-              >
-              <div
-                class="relative w-full flex justify-center items-center border hover:border-rayna-secondary rounded-md p-4"
-              >
-                <input
-                  type="email"
-                  name="password"
-                  id="password"
-                  placeholder="Enter Password"
-                  class="w-full h-full outline-none bg-transparent"
-                />
-                <img
-                  src="./assets/eye.svg"
-                  alt=""
-                  class="absolute right-0 pr-1"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="flex justify-between my-8">
-            <div class="w-[400px] flex gap-2">
-              <input type="checkbox" name="" id="" />
-              <p class="font-medium text-sm text-rayna-text">
-                Remember me for 30 days
-              </p>
-            </div>
+          <a href="#" class="font-medium text-sm text-rayna-secondary">
+            Forgot Password?
+          </a>
+        </div>
 
-            <a href="#" class="font-medium text-sm text-rayna-secondary">
-              Forgot Password?
-            </a>
-          </div>
+        <button
+          class="w-full h-12 hover:bg-rayna-secondary bg-rayna-primary text-white rounded-lg"
+        >
+          Log into Account
+        </button>
 
-          <button
-            class="w-full h-12 hover:bg-rayna-secondary bg-rayna-primary text-white rounded-lg"
-          >
-            Log into Account
-          </button>
+        <div class="flex items-center justify-center gap-2 mt-8">
+          <p class="font-medium text-xs text-rayna-grey">Are you new here?</p>
+          <a href="#" class="font-medium text-sm text-rayna-secondary">
+            Create Account
+          </a>
+        </div>
+      </form>
+    </section>
 
-          <div class="flex items-center justify-center gap-2 mt-8">
-            <p class="font-medium text-xs text-rayna-grey">Are you new here?</p>
-            <a href="#" class="font-medium text-sm text-rayna-secondary">
-              Create Account
-            </a>
-          </div>
-        </form>
-      </section>
-    </div>
-
-    <footer
+    <div
       class="flex justify-center items-center text-base font-semibold gap-2 fixed bottom-0"
     >
       <img src="assets/rayna.svg" alt="" />
       <p>Powered by</p>
       <p>Ryvision</p>
-    </footer>
+      <div />
+    </div>
   </body>
 </html>

@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./index.html'],
+  theme: {
+    extend: {
+      colors: {
+        'rayna-secondary': '#CC400C',
+        'rayna-primary': '#EB5017',
+        'rayna-grey': '#667185',
+        'rayna-background': '#F7F9FC',
+        'rayna-text': '#101928',
+      },
+    },
+  },
+  plugins: [],
+};
